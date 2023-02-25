@@ -46,7 +46,7 @@ export default function Bowler() {
             <TextField id="outlined-basic" label="Bowler Name" variant="outlined" fullWidth
             value={name}
             onChange={(e)=>setName(e.target.value)}/>
-            <TextField id="outlined-basic" label="Bowler Average" variant="outlined" fullWidth 
+            <TextField id="outlined-basic" label="Bowler Average" variant="outlined" fullWidth
             type="number"
             min="0"
             max="300"
@@ -58,8 +58,9 @@ export default function Bowler() {
             </Box>
         </Paper>
 
-        <h1>Bowlers</h1>
+        
         <Paper elevation={3} style={paperStyle}>
+        <h1 style={{color:"blue"}}>Bowlers</h1>
             {bowlers.map(bowler=>(
                 <Paper elevation={6} style={{margin:"10px",padding:"15px",textAlign:"left"}} key={bowler.id}>
                     Id:{bowler.id}<br/>
